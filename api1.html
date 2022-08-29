@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OMS Doc</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition 
+ sidebar-mini layout-fixed layout-navbar-fixed 
+layout-footer-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__wobble" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-dark">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+
+      <!-- Notifications Dropdown Menu -->
+
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary 
+  elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="dist/img/AdminLTELogo.png" 
+      alt="AdminLTE Logo" 
+      class="brand-image img-circle elevation-3" 
+      style="opacity: .8">
+      <span class="brand-text font-weight-light">
+        OMS Doc</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar 
+        flex-column" data-widget="treeview" 
+        role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+               <li class="nav-item menu-open nav-legacy nav-sidebar">
+                <a href="#" class="nav-link active">
+                  <i class="nav-icon fas 
+                  fa-tachometer-alt"></i>
+                  <p>
+                    Dashboard
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="./api1.html" class="nav-link active">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>API 1</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./api2.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>API 2</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./api3.html" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>API 3</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">OMS Documentation</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+              <li class="breadcrumb-item active">Documentation</li>
+            </ol>
+          </div>
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+        <!-- /.row -->
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-12" id="accordion">
+                <div class="card card-primary card-outline">
+                    <a class="d-block w-100" data-toggle="collapse" href="#collapseOne">
+                        <div class="card-header">
+                            <h4 class="card-title w-100">
+                                Customer Profile
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            The endpoint is to get customer information
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-warning card-outline">
+                    <a class="d-block w-100" data-toggle="collapse" href="#collapseTwo">
+                        <div class="card-header">
+                            <h4 class="card-title w-100">
+                                EndPoint
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p><b>Base URL</b>: www.leads.com</p>
+                            <p><b>API Path</b>: /customers/{customerId}/accounts</p>
+                            <p><b>Method</b>: GET</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-danger card-outline">
+                    <a class="d-block w-100" data-toggle="collapse" href="#collapseThree">
+                        <div class="card-header">
+                            <h4 class="card-title w-100">
+                                Request Headers
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p><b>Authentication</b>: Bearer<api_key> (api_key as standard jwt token need private key to decript)</p>
+                            <p><b>Content-Type: </b>application/json</p>
+                            <p><b></b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-danger card-outline">
+                    <a class="d-block w-100" data-toggle="collapse" href="#collapseFour">
+                        <div class="card-header">
+                            <h4 class="card-title w-100">
+                                Parameters
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseFour" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p><b></b></p>
+
+                            <div class="row">
+                                <div class="col-12">
+                                  <div class="card">
+                                    <div class="card-body table-responsive p-0">
+                                      <table class="table table-hover text-nowrap">
+                                        <thead>
+                                          <tr>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Desc</th>
+                                            <th>Type</th>
+                                            <th>Mandatory</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>1</td>
+                                            <td>customerid</td>
+                                            <td>Customer Id description</td>
+                                            <td><span class="tag tag-success">Integer</span></td>
+                                            <td>Yes</td>
+                                          </tr>
+                                          <tr>
+                                            <td>2</td>
+                                            <td>Alexander Pierce</td>
+                                            <td>11-7-2014</td>
+                                            <td><span class="tag tag-warning">Pending</span></td>
+                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                          </tr>
+                                          <tr>
+                                            <td>3</td>
+                                            <td>Bob Doe</td>
+                                            <td>11-7-2014</td>
+                                            <td><span class="tag tag-primary">Approved</span></td>
+                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                          </tr>
+                                          <tr>
+                                            <td>4</td>
+                                            <td>Mike Doe</td>
+                                            <td>11-7-2014</td>
+                                            <td><span class="tag tag-danger">Denied</span></td>
+                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <!-- /.card-body -->
+                                  </div>
+                                  <!-- /.card -->
+                                </div>
+                              </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-primary card-outline">
+                    <a class="d-block w-100" data-toggle="collapse" href="#collapseFive">
+                        <div class="card-header">
+                            <h4 class="card-title w-100">
+                                Request Body     
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseFive" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <!--h6><strong>Success</strong></h6-->
+                            <div class="langulage-bash highlighter-rouge">
+                                <div class="highlight">
+                                    <code>
+                                        { <br/>
+                                        &nbsp; customerId:"1"<br/>
+                                        }
+                                        <!--span class="nt">--save</span-->
+                                    </code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-primary card-outline">
+                    <a class="d-block w-100" data-toggle="collapse" href="#collapseSix">
+                        <div class="card-header">
+                            <h4 class="card-title w-100">
+                                Response Body     
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseSix" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <h6><strong>Success</strong></h6>
+                            <div class="langulage-bash highlighter-rouge">
+                                <div class="highlight">
+                                    <code>
+                                        { <br/>
+                                        &nbsp; customers:<br/>
+                                        &nbsp;&nbsp;{<br/>
+                                        &nbsp;&nbsp;}<br/>
+                                        }
+                                        <!--span class="nt">--save</span-->
+                                    </code>
+                                </div>
+                            </div>
+                            <br>
+                            <h6><strong>Error</strong></h6>
+                            <div class="langulage-bash highlighter-rouge">
+                                <div class="highlight">
+                                    <code>
+                                        { <br/>
+                                        &nbsp; "status":401<br/>
+                                        &nbsp;&nbsp;"title":"Incorrect username or password"<br/>
+                                        &nbsp;&nbsp;"detail":"Authentication failed due to incorrect username or password"<br/>
+                                        }
+                                        <!--span class="nt">--save</span-->
+                                    </code>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 mt-3 text-center">
+                <p class="lead">
+                    <a href="contact-us.html">Contact us</a>,
+                    if you found not the right anwser or you have a other question?<br />
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <div class="content-wrapper">
+  </div>
+
+
+
+
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <strong>Copyright &copy;2022 <a href="https://leads.com.bd/capital-market-solutions/order-management-system/">Leads Corporation Ltd</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0
+    </div>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+
+<!-- PAGE PLUGINS -->
+<!-- jQuery Mapael -->
+<script src="plugins/jquery-mousewheel/jquery.mousewheel.js"></script>
+<script src="plugins/raphael/raphael.min.js"></script>
+<script src="plugins/jquery-mapael/jquery.mapael.min.js"></script>
+<script src="plugins/jquery-mapael/maps/usa_states.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard2.js"></script>
+</body>
+</html>
